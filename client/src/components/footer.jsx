@@ -35,13 +35,13 @@ export default function Footer() {
       <div className="absolute bottom-10 left-10 w-32 h-32 rounded-full bg-[var(--gold)]/10"></div>
       
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-white/10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 gap-y-12 pb-10 border-b border-white/10">
           {/* Column 1: About */}
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <div className="mb-6">
               <Logo footer />
             </div>
-            <p className="text-white/70 mb-6">
+            <p className="text-white/70 mb-6 max-w-md">
               Ruth International specializes in global career placement and professional development services across maritime, hospitality, IT and security sectors.
             </p>
             <div className="flex space-x-4">
@@ -62,7 +62,7 @@ export default function Footer() {
           
           {/* Column 2: Quick Links */}
           <div className="col-span-1">
-            <h4 className="text-lg font-bold mb-6">Quick Links</h4>
+            <h4 className="text-lg font-bold mb-4 sm:mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -71,7 +71,7 @@ export default function Footer() {
                     onClick={(e) => handleClick(e, link.href.substring(1))}
                     className="text-white/70 hover:text-[var(--gold)] transition-colors flex items-center"
                   >
-                    <ArrowRight className="h-4 w-4 mr-2" />
+                    <ArrowRight className="h-4 w-4 mr-2 flex-shrink-0" />
                     <span>{link.label}</span>
                   </a>
                 </li>
@@ -81,7 +81,7 @@ export default function Footer() {
           
           {/* Column 3: Courses */}
           <div className="col-span-1">
-            <h4 className="text-lg font-bold mb-6">Our Courses</h4>
+            <h4 className="text-lg font-bold mb-4 sm:mb-6">Our Courses</h4>
             <ul className="space-y-3">
               {footerCourses.map((course, index) => (
                 <li key={index}>
@@ -90,7 +90,7 @@ export default function Footer() {
                     onClick={(e) => handleClick(e, course.href.substring(1))}
                     className="text-white/70 hover:text-[var(--gold)] transition-colors flex items-center"
                   >
-                    <ArrowRight className="h-4 w-4 mr-2" />
+                    <ArrowRight className="h-4 w-4 mr-2 flex-shrink-0" />
                     <span>{course.label}</span>
                   </a>
                 </li>
@@ -99,19 +99,19 @@ export default function Footer() {
           </div>
           
           {/* Column 4: Contact */}
-          <div className="col-span-1">
-            <h4 className="text-lg font-bold mb-6">Contact Us</h4>
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1">
+            <h4 className="text-lg font-bold mb-4 sm:mb-6">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 text-[var(--gold)]" />
+                <MapPin className="h-5 w-5 mr-3 text-[var(--gold)] flex-shrink-0 mt-0.5" />
                 <span className="text-white/70">1234 Career Avenue, Mumbai, Maharashtra 400001, India</span>
               </li>
               <li className="flex items-start">
-                <Mail className="h-5 w-5 mr-3 text-[var(--gold)]" />
+                <Mail className="h-5 w-5 mr-3 text-[var(--gold)] flex-shrink-0 mt-0.5" />
                 <span className="text-white/70">info@ruthinternational.com</span>
               </li>
               <li className="flex items-start">
-                <Phone className="h-5 w-5 mr-3 text-[var(--gold)]" />
+                <Phone className="h-5 w-5 mr-3 text-[var(--gold)] flex-shrink-0 mt-0.5" />
                 <span className="text-white/70">+91 98765 43210</span>
               </li>
             </ul>
@@ -120,7 +120,7 @@ export default function Footer() {
               <a 
                 href="#contact"
                 onClick={(e) => handleClick(e, "contact")}
-                className="btn-secondary"
+                className="btn-secondary inline-flex w-full sm:w-auto justify-center"
               >
                 Contact Us
               </a>
