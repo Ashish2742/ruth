@@ -1,13 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --primary: #0d1b3e;
+    --primary-light: #162a54;
+    --gold: #d4af37;
+    --gold-light: #e9cc65;
+    --text-dark: #1a2348;
+    --text-light: #7a7a8c;
+    --background: #ffffff;
+    --background-alt: #f8f9fa;
+  }
+
   * {
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--primary)] hover:bg-[var(--primary-light)] text-white font-medium px-6 py-3 rounded-md transition-all duration-300 flex items-center justify-center;
+  }
+
+  .btn-secondary {
+    @apply bg-[var(--gold)] hover:bg-[var(--gold-light)] text-[var(--primary)] font-medium px-6 py-3 rounded-md transition-all duration-300 flex items-center justify-center;
+  }
+
+  .btn-outline {
+    @apply border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white font-medium px-6 py-3 rounded-md transition-all duration-300 flex items-center justify-center;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-5xl font-bold mb-6 text-[var(--text-dark)];
+  }
+
+  .section-subtitle {
+    @apply text-xl md:text-2xl text-[var(--text-light)] mb-12;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
