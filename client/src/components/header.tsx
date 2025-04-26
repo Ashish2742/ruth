@@ -36,17 +36,11 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <button onClick={() => handleNavClick("home")} className="text-white hover:text-[#D4AF37] transition duration-200">
-              Home
-            </button>
             <button onClick={() => handleNavClick("about")} className="text-white hover:text-[#D4AF37] transition duration-200">
               About
             </button>
             <button onClick={() => handleNavClick("courses")} className="text-white hover:text-[#D4AF37] transition duration-200">
               Courses
-            </button>
-            <button onClick={() => handleNavClick("careers")} className="text-white hover:text-[#D4AF37] transition duration-200">
-              Careers
             </button>
             <button onClick={() => handleNavClick("contact")} className="text-white hover:text-[#D4AF37] transition duration-200">
               Contact

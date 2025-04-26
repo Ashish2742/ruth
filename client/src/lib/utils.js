@@ -1,5 +1,11 @@
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import securityguard from "@/lib/images/securityguard.jpeg";
+import cruisejobs from "@/lib/images/curisejobs.jpeg";
+import internationalhoteljobs from "@/lib/images/internationaljobs.jpeg";
+import itsector from "@/lib/images/itsector.jpeg";
+import martinetimenavy from "@/lib/images/marinetimenavy.jpeg";
+import stcwcourses from "@/lib/images/stcwcourse.jpeg";
 
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -14,24 +20,42 @@ export const courses = [
     title: "STCW Course",
     category: "Maritime",
     description: "Standards of Training, Certification and Watchkeeping for Seafarers - essential for maritime careers.",
-    duration: "4-6 weeks",
-    image: "https://images.unsplash.com/photo-1589317621382-0cbef7ffcc4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+    image: stcwcourses
   },
   {
     id: "merchant-navy",
     title: "Merchant Navy",
     category: "Maritime",
     description: "Comprehensive training for careers in commercial shipping and international trade vessels.",
-    duration: "12-16 weeks",
-    image: "https://images.unsplash.com/photo-1596005554384-d293674c91d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+    image: martinetimenavy
+  },
+  {
+    id: "cruise-jobs",
+    title: "Cruise Jobs",
+    category: "Hospitality",
+    description: "Specialized training for various positions in the cruise line industry, from service to operations.",
+    image: cruisejobs
+  },
+  {
+    id: "security-guard",
+    title: "Security Guard",
+    category: "Security",
+    description: "Professional security training for international security positions and certifications.",
+    image: securityguard
+  },
+  {
+    id: "hotel-jobs",
+    title: "International Hotel Jobs",
+    category: "Hospitality",
+    description: "Comprehensive hospitality training for positions in international hotels and resorts.",
+    image: internationalhoteljobs
   },
   {
     id: "it-sector",
     title: "IT Sector",
     category: "Technology",
     description: "Technology and digital skills training for positions in the global IT industry.",
-    duration: "8-12 weeks",
-    image: "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    image: itsector
   }
 ];
 

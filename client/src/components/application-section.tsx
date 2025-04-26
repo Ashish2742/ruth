@@ -85,7 +85,7 @@ export default function ApplicationSection() {
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-4">
               <div className="bg-[#1A2348] p-4 rounded-lg text-center flex-1">
                 <div className="text-3xl font-bold text-[#D4AF37] mb-2">1000+</div>
                 <p className="text-white text-sm">Successful Placements</p>
@@ -100,7 +100,7 @@ export default function ApplicationSection() {
                 <div className="text-3xl font-bold text-[#D4AF37] mb-2">20+</div>
                 <p className="text-white text-sm">Global Partners</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>

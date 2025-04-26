@@ -26,20 +26,20 @@ export default function Footer() {
             <p className="text-gray-300 mb-6">
               Your trusted partner for international career opportunities since 2015. We specialize in training and placement services across multiple sectors.
             </p>
-            
+
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
+              {/* <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
                 <Linkedin size={18} />
-              </a>
+                </a> */}
               <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
+              {/* <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
                 <FaWhatsapp size={18} />
-              </a>
+                </a> */}
             </div>
           </div>
           
@@ -47,12 +47,6 @@ export default function Footer() {
             <h4 className="text-[#D4AF37] font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <button 
-                  onClick={() => handleNavClick("home")} 
-                  className="text-gray-300 hover:text-[#D4AF37] transition duration-200"
-                >
-                  Home
-                </button>
               </li>
               <li>
                 <button 
@@ -68,14 +62,6 @@ export default function Footer() {
                   className="text-gray-300 hover:text-[#D4AF37] transition duration-200"
                 >
                   Courses
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => handleNavClick("careers")} 
-                  className="text-gray-300 hover:text-[#D4AF37] transition duration-200"
-                >
-                  Career Opportunities
                 </button>
               </li>
               <li>
@@ -100,12 +86,12 @@ export default function Footer() {
           <div>
             <h4 className="text-[#D4AF37] font-semibold text-lg mb-4">Our Courses</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-[#D4AF37] transition duration-200">STCW Course</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-[#D4AF37] transition duration-200">Merchant Navy</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-[#D4AF37] transition duration-200">IT Sector</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-[#D4AF37] transition duration-200">Cruise Jobs Training</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-[#D4AF37] transition duration-200">Security Guard</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-[#D4AF37] transition duration-200">Hotel Management</a></li>
+              <li><a onClick={() => handleNavClick("stcw")} className="text-gray-300 hover:text-[#D4AF37] cursor-pointer transition duration-200">STCW Course</a></li>
+              <li><a onClick={() => handleNavClick("merchant-navy")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">Merchant Navy</a></li>
+              <li><a onClick={() => handleNavClick("it-sector")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">IT Sector</a></li>
+              <li><a onClick={() => handleNavClick("cruise-jobs")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">Cruise Jobs Training</a></li>
+              <li><a onClick={() => handleNavClick("security-guard")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">Security Guard</a></li>
+              <li><a onClick={() => handleNavClick("hotel-jobs")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer  transition duration-200">Hotel Management</a></li>
             </ul>
           </div>
           
@@ -141,7 +127,6 @@ export default function Footer() {
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-[#D4AF37] text-sm transition duration-200">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-[#D4AF37] text-sm transition duration-200">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-[#D4AF37] text-sm transition duration-200">Sitemap</a>
             </div>
           </div>
         </div>

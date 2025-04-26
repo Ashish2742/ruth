@@ -74,18 +74,23 @@ export default function ContactSection() {
             </div>
             
             <div className="flex space-x-4">
+              {/* Social Media Icons */}
+              {/* facebook */}
               <a href="#" className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
-                <Linkedin size={18} />
-              </a>
+              {/* instagram */}
               <a href="#" className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+              {/* linkedin */}
+              {/* <a href="#" className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                <Linkedin size={18} />
+              </a> */}
+              {/* whatsapp */}
+              {/* <a href="#" className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                 <FaWhatsapp className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
           

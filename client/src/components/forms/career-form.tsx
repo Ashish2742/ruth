@@ -182,7 +182,7 @@ export default function CareerForm() {
           )}
         />
         
-        <FormField
+        {/* <FormField
           control={form.control}
           name="resumeFilename"
           render={({ field }) => (
@@ -219,7 +219,7 @@ export default function CareerForm() {
               <FormMessage />
             </FormItem>
           )}
-        />
+        /> */}
         
         <Button 
           type="submit" 
