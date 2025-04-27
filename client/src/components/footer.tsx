@@ -125,8 +125,8 @@ export default function Footer() {
             </p>
             
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-[#D4AF37] text-sm transition duration-200">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-[#D4AF37] text-sm transition duration-200">Terms of Service</a>
+              {/* <a href="#" className="text-gray-400 hover:text-[#D4AF37] text-sm transition duration-200">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-[#D4AF37] text-sm transition duration-200">Terms of Service</a> */}
             </div>
           </div>
         </div>
