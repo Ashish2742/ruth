@@ -1,4 +1,4 @@
-import { clsx } from "clsx";
+import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import securityguard from "@/lib/images/securityguard.jpeg";
 import cruisejobs from "@/lib/images/curisejobs.jpeg";
@@ -7,13 +7,12 @@ import itsector from "@/lib/images/itsector.jpeg";
 import martinetimenavy from "@/lib/images/marinetimenavy.jpeg";
 import stcwcourses from "@/lib/images/stcwcourse.jpeg";
 
-export function cn(...inputs) {
+export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
 export const phoneRegex = /^\+?[0-9]{10,15}$/;
 export const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-
 export const courses = [
   {
     id: "stcw",
@@ -116,7 +115,7 @@ export const testimonials = [
   }
 ];
 
-export function scrollToElement(id) {
+export function scrollToElement(id: string) {
   const element = document.getElementById(id);
   if (element) {
     const yOffset = -100;

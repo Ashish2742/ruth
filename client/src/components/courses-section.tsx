@@ -9,7 +9,6 @@ interface Course {
   title: string;
   description: string;
   category: string;
-  duration: string;
   image: string;
 }
 

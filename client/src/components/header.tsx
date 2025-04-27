@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import Container from "@/components/ui/container";
 import Logo from "@/components/ui/logo";
-import { scrollToElement } from "@/lib/utils";
+import { scrollToElement } from "../lib/utils";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
