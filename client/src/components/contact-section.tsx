@@ -54,8 +54,9 @@ export default function ContactSection() {
                   <h4 className="font-medium">Email Address</h4>
                 </div>
                 <p className="text-gray-700 text-sm">
-                  info@ruthinternational.com<br/>
-                  careers@ruthinternational.com
+                  
+                <a href="mailto:info@ruthinternational.com">info@ruthinternational.com</a><br />
+                <a href="mailto:careers@ruthinternational.com">careers@ruthinternational.com</a>
                 </p>
               </div>
               
@@ -76,11 +77,11 @@ export default function ContactSection() {
             <div className="flex space-x-4">
               {/* Social Media Icons */}
               {/* facebook */}
-              <a href="#" className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+              <a className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                 <Facebook size={18} />
               </a>
               {/* instagram */}
-              <a href="#" className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+              <a className="bg-[#1A2348] hover:bg-[#2A3460] text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
                 <Instagram size={18} />
               </a>
               {/* linkedin */}

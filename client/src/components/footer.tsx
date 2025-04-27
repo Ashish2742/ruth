@@ -28,13 +28,13 @@ export default function Footer() {
             </p>
 
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
+              <a  className="text-white hover:text-[#D4AF37] transition duration-300">
                 <Facebook size={18} />
               </a>
               {/* <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
                 <Linkedin size={18} />
                 </a> */}
-              <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
+              <a  className="text-white hover:text-[#D4AF37] transition duration-300">
                 <Instagram size={18} />
               </a>
               {/* <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
@@ -86,12 +86,12 @@ export default function Footer() {
           <div>
             <h4 className="text-[#D4AF37] font-semibold text-lg mb-4">Our Courses</h4>
             <ul className="space-y-3">
-              <li><a onClick={() => handleNavClick("stcw")} className="text-gray-300 hover:text-[#D4AF37] cursor-pointer transition duration-200">STCW Course</a></li>
-              <li><a onClick={() => handleNavClick("merchant-navy")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">Merchant Navy</a></li>
-              <li><a onClick={() => handleNavClick("it-sector")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">IT Sector</a></li>
-              <li><a onClick={() => handleNavClick("cruise-jobs")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">Cruise Jobs Training</a></li>
-              <li><a onClick={() => handleNavClick("security-guard")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">Security Guard</a></li>
-              <li><a onClick={() => handleNavClick("hotel-jobs")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer  transition duration-200">Hotel Management</a></li>
+              <li><a onClick={() => handleNavClick("courses")} className="text-gray-300 hover:text-[#D4AF37] cursor-pointer transition duration-200">STCW Course</a></li>
+              <li><a onClick={() => handleNavClick("courses")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">Merchant Navy</a></li>
+              <li><a onClick={() => handleNavClick("courses")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">IT Sector</a></li>
+              <li><a onClick={() => handleNavClick("courses")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">Cruise Jobs Training</a></li>
+              <li><a onClick={() => handleNavClick("courses")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer transition duration-200">Security Guard</a></li>
+              <li><a onClick={() => handleNavClick("courses")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer  transition duration-200">Hotel Management</a></li>
             </ul>
           </div>
           
@@ -108,7 +108,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="text-[#D4AF37] mr-3 flex-shrink-0" />
-                <span className="text-gray-300">info@ruthinternational.com</span>
+                <span className="text-gray-300"> <a href="mailto:info@ruthinternational.com">info@ruthinternational.com</a></span>
               </li>
               <li className="flex items-center">
                 <FaClock className="text-[#D4AF37] mr-3 flex-shrink-0" />
