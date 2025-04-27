@@ -15,9 +15,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 rounded-full bg-[#1A2348] border-2 border-[#D4AF37] flex items-center justify-center mr-3">
+              {/* <div className="w-10 h-10 rounded-full bg-[#1A2348] border-2 border-[#D4AF37] flex items-center justify-center mr-3">
                 <div className="text-[#D4AF37] text-xl">R</div>
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-[#D4AF37] font-['Playfair_Display'] text-xl font-bold">RUTH INTERNATIONAL</h3>
               </div>
