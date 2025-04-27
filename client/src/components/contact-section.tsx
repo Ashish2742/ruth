@@ -68,7 +68,7 @@ export default function ContactSection() {
                 </div>
                 <p className="text-gray-700 text-sm">
                   Monday - Friday: 9:00 AM - 6:00 PM<br/>
-                  Saturday: 10:00 AM - 2:00 PM
+                  {/* Saturday: 10:00 AM - 2:00 PM */}
                 </p>
               </div>
             </div>
