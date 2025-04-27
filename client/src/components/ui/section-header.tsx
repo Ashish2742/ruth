@@ -10,7 +10,8 @@ export default function SectionHeader({
   title, 
   centered = false, 
   color = "navy" 
-}: SectionHeaderProps) {
+}
+: SectionHeaderProps) {
   const colorClass = color === "gold" ? "text-[#D4AF37]" : "text-[#1A2348]";
   
   return (

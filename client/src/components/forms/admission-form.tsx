@@ -29,6 +29,9 @@ import { Button } from "@/components/ui/button";
 const formSchema = insertAdmissionSchema.extend({
   email: z.string().regex(emailRegex, "Invalid email address"),
   phone: z.string().regex(phoneRegex, "Invalid phone number format"),
+  name:z.string().min(3, "Name must be at least 3 characters long"),
+  position:z.string().nonempty("Position is required"),
+  education:z.string().nonempty("Education is required"),
 });
 
 export default function AdmissionForm() {

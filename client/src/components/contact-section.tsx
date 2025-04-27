@@ -38,11 +38,11 @@ export default function ContactSection() {
                   <div className="bg-[#1A2348] rounded-full p-2 mr-3">
                     <FaPhoneAlt className="text-[#D4AF37]" />
                   </div>
-                  <h4 className="font-medium">Phone Numbers</h4>
+                  <h4 className="font-medium">LandLine Number</h4>
                 </div>
                 <p className="text-gray-700 text-sm">
-                  +91 7888151116<br/>
-                  +91 8591358938
+                  022 45199936<br/>
+                 
                 </p>
               </div>
               

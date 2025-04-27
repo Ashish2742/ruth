@@ -38,7 +38,6 @@ export const careers = pgTable("careers", {
   experience: text("experience").notNull(),
   email: text("email").notNull(),
   phone: text("phone").notNull(),
-  resumeFilename: text("resume_filename"),
   createdAt: text("created_at").notNull(),
 });
 

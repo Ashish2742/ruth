@@ -30,6 +30,10 @@ import { CloudUpload } from "lucide-react";
 
 const formSchema = insertCareerSchema.extend({
   email: z.string().regex(emailRegex, "Invalid email address"),
+  position: z.string().nonempty("Position is required"),
+  experience: z.string().nonempty("Experience is required"),
+  name: z.string().nonempty("Name must be at least 3 characters"),
+  education: z.string().nonempty("Education is required,If no education please write N/A"),
   phone: z.string().regex(phoneRegex, "Invalid phone number format"),
 });
 
@@ -45,7 +49,6 @@ export default function CareerForm() {
       experience: "",
       email: "",
       phone: "",
-      resumeFilename: "",
     },
   });
 
