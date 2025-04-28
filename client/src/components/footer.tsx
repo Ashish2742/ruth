@@ -8,7 +8,7 @@ export default function Footer() {
   const handleNavClick = (id: string) => {
     scrollToElement(id);
   };
-  
+
   return (
     <footer className="bg-[#1A2348] text-white pt-16 pb-8">
       <Container>
@@ -18,23 +18,53 @@ export default function Footer() {
               {/* <div className="w-10 h-10 rounded-full bg-[#1A2348] border-2 border-[#D4AF37] flex items-center justify-center mr-3">
                 <div className="text-[#D4AF37] text-xl">R</div>
               </div> */}
-              <div>
-                <h3 className="text-[#fdd05a] font-['Playfair_Display'] text-xl font-bold">RUTH INTERNATIONAL</h3>
+              <div className="flex flex-col items-center leading-tight">
+                {/* RUTH text */}
+                <h1 className="text-[#fdd05a] font-bold text-base  uppercase font-serif">
+                  RUTH
+                </h1>
+
+                {/* INTERNATIONAL text */}
+                <h2 className="text-[#fdd05a] font-bold text-base uppercase font-serif tracking-widest">
+                  INTERNATIONAL
+                </h2>
+
+                {/* Divider and Slogan */}
+                <div className="flex items-center justify-center mt-1 space-x-3">
+                  {/* Left lines */}
+                  <div className="flex flex-col items-end space-y-0.5">
+                    <div className="w-1 border-t-2 border-[#fdd05a]" />
+                    <div className="w-4 border-t-2 border-[#fdd05a]" />
+                    <div className="w-4 border-t-2 border-[#fdd05a]" />
+                  </div>
+
+                  {/* Slogan text */}
+                  <p className="text-[#fdd05a] text-xs  uppercase tracking-[0.25em] font-light">
+                    WE CREATE SUCCESS
+                  </p>
+
+                  {/* Right lines */}
+                  <div className="flex flex-col items-start space-y-0.5">
+                    <div className="w-1 border-t-2 border-[#fdd05a]" />
+                    <div className="w-4 border-t-2 border-[#fdd05a]" />
+                    <div className="w-4 border-t-2 border-[#fdd05a]" />
+                  </div>
+                </div>
               </div>
             </div>
-            
+
             <p className="text-gray-300 mb-6">
               Your trusted partner for international career opportunities since 2015. We specialize in training and placement services across multiple sectors.
             </p>
 
             <div className="flex space-x-4">
-              <a  className="text-white hover:text-[#D4AF37] transition duration-300">
+              <a className="text-white hover:text-[#D4AF37] transition duration-300">
                 <Facebook size={18} />
               </a>
               {/* <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
                 <Linkedin size={18} />
                 </a> */}
-              <a  className="text-white hover:text-[#D4AF37] transition duration-300">
+              <a className="text-white hover:text-[#D4AF37] transition duration-300">
                 <Instagram size={18} />
               </a>
               {/* <a href="#" className="text-white hover:text-[#D4AF37] transition duration-300">
@@ -42,39 +72,39 @@ export default function Footer() {
                 </a> */}
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-[#D4AF37] font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-3">
               <li>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNavClick("about")} 
+                <button
+                  onClick={() => handleNavClick("about")}
                   className="text-gray-300 hover:text-[#D4AF37] transition duration-200"
                 >
                   About Us
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNavClick("courses")} 
+                <button
+                  onClick={() => handleNavClick("courses")}
                   className="text-gray-300 hover:text-[#D4AF37] transition duration-200"
                 >
                   Courses
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNavClick("apply")} 
+                <button
+                  onClick={() => handleNavClick("apply")}
                   className="text-gray-300 hover:text-[#D4AF37] transition duration-200"
                 >
                   Apply Now
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNavClick("contact")} 
+                <button
+                  onClick={() => handleNavClick("contact")}
                   className="text-gray-300 hover:text-[#D4AF37] transition duration-200"
                 >
                   Contact Us
@@ -82,7 +112,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-[#D4AF37] font-semibold text-lg mb-4">Our Courses</h4>
             <ul className="space-y-3">
@@ -94,7 +124,7 @@ export default function Footer() {
               <li><a onClick={() => handleNavClick("courses")} className="text-gray-300 hover:text-[#D4AF37]  cursor-pointer  transition duration-200">Hotel Management</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-[#D4AF37] font-semibold text-lg mb-4">Contact Information</h4>
             <ul className="space-y-3">
@@ -117,13 +147,13 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Ruth International. All rights reserved.
             </p>
-            
+
             <div className="flex space-x-6">
               {/* <a href="#" className="text-gray-400 hover:text-[#D4AF37] text-sm transition duration-200">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-[#D4AF37] text-sm transition duration-200">Terms of Service</a> */}
