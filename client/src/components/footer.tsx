@@ -19,7 +19,7 @@ export default function Footer() {
                 <div className="text-[#D4AF37] text-xl">R</div>
               </div> */}
               <div>
-                <h3 className="text-[#D4AF37] font-['Playfair_Display'] text-xl font-bold">RUTH INTERNATIONAL</h3>
+                <h3 className="text-[#fdd05a] font-['Playfair_Display'] text-xl font-bold">RUTH INTERNATIONAL</h3>
               </div>
             </div>
             
