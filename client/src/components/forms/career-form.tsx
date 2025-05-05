@@ -54,13 +54,14 @@ export default function CareerForm() {
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (values: z.infer<typeof formSchema>) => {
-      const res = await apiRequest("POST", "/api/careers", values);
+      const res = await apiRequest("POST", "http://localhost:3001/api/v1/forms?type=career", values);
       return res.json();
     },
     onSuccess: () => {
       toast({
         title: "Career Application Submitted",
         description: "We'll contact you soon about your application.",
+        className: "bg-green-500 text-white"
       });
       form.reset();
     },

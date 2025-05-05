@@ -41,13 +41,14 @@ export default function ContactForm() {
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (values: z.infer<typeof formSchema>) => {
-      const res = await apiRequest("POST", "/api/contacts", values);
+      const res = await apiRequest("POST", "http://localhost:3001/api/v1/forms?type=enquiry", values);
       return res.json();
     },
     onSuccess: () => {
       toast({
         title: "Message Sent",
         description: "We'll get back to you as soon as possible.",
+        className: "bg-green-500 text-white"
       });
       form.reset();
     },
